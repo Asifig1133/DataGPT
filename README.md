@@ -1,4 +1,5 @@
-DataGPT: A Text Generation Toolkit
+# DataGPT: 
+A Text Generation Toolkit
 This repository provides the source code for DataGPT, a toolkit for generating SQL from natural language text.
 
 ## Getting Started
@@ -7,10 +8,7 @@ This repository provides the source code for DataGPT, a toolkit for generating S
     git clone https://github.com/Asifig1133/DataGPT.git
     
 2. Environment Setup
-
-The default database uses SQLite, so no additional database installation is required in the default mode. However, if you want to use other databases, 
-  
-  # recommend creating a Python virtual environment using conda.
+  recommend creating a Python virtual environment using conda.
 
   i. Install Miniconda (if not already installed):
   Refer to the official Miniconda installation guide for instructions: https://docs.anaconda.com/miniconda/
@@ -23,7 +21,7 @@ The default database uses SQLite, so no additional database installation is requ
   Install project dependencies using pip:
   pip install -e ".[default]"
 
-5. Configure Environment Variables:
+4. Configure Environment Variables:
   Copy the .env.template file to .env and modify the following variables according to your needs:
 
   LLM_MODEL (default: chatgpt_proxyllm)
