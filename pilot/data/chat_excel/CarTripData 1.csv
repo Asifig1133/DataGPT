@@ -1,0 +1,71 @@
+Trip,Route,Weather,Distance,Duration
+TripA01,Munich East,sunny,7.43,16.82
+TripA02,Munich East,sunny,23.51,23.55
+TripA03,Munich East,sunny,12.82,11.18
+TripA04,Munich East,sunny,10.73,6.87
+TripA05,Munich East,sunny,12.39,22.78
+TripA06,Munich North,sunny,45.99,52.74
+TripA07,Munich North,sunny,44.34,34.89
+TripA08,Munich East,slightly cloudy,18.23,46.76
+TripA09,Munich East,slightly cloudy,11.66,30.57
+TripA10,Munich East,slightly cloudy,16.25,23.63
+TripA11,Munich East,sunny,17.73,23.74
+TripA12,Munich East,sunny,18.65,27.31
+TripA13,Munich East,sunny,4.57,11.93
+TripA14,Munich East,sunny,4.93,11.58
+TripA15,Munich East,rainy,26.97,37.23
+TripA16,Munich East,rainy,28.8,31.78
+TripA17,Munich East,slightly cloudy,12.97,11.14
+TripA18,Munich East,slightly cloudy,12.19,14.68
+TripA19,Munich East,slightly cloudy,16.73,26.46
+TripA20,Munich East,slightly cloudy,11.52,28.66
+TripA21,Munich East,sunny,14.32,33.05
+TripA22,Munich East,sunny,19.37,30.65
+TripA23,Munich East,sunny,8.36,17.38
+TripA24,Munich East,sunny,11.27,8.87
+TripA25,Munich East,sunny,12.21,12.71
+TripA26,Munich East,slightly cloudy,18.03,26.87
+TripA27,Munich East,slightly cloudy,20.43,33.34
+TripA28,Munich East,sunny,19.52,29.06
+TripA29,Munich East,sunny,16.33,22.32
+TripA30,Munich East,sunny,7.75,23.29
+TripA31,Munich East,sunny,15.98,19.78
+TripA32,Munich East,slightly cloudy,37.21,27.87
+TripB01,FTMRoute,cloudy,38.79,54.2
+TripB02,FTMRoute,"dark, little rainy",18.93,26.85
+TripB03,FTMRoute,sunny,19.4,26.32
+TripB04,Munich North Fast Charging,cloudy,16.6,49.25
+TripB05,Munich North,cloudy,14.82,16.99
+TripB06,Munich North,dark,16.58,22.53
+TripB07,Munich Northeast,slightly cloudy,30.38,38.16
+TripB08,Munich Northeast,cloudy,32.22,48.57
+TripB09,Munich South,sunny,54.18,93.5
+TripB10,Highway,slightly cloudy,47.84,33.72
+TripB11,Munich South,cloudy,10.21,12.56
+TripB12,Highway,cloudy,37.06,53.76
+TripB13,Munich South,cloudy,2.78,5.91
+TripB14,Highway,cloudy,60.97,63.7
+TripB15,FTMRoute,slightly cloudy,19.24,30.37
+TripB16,FTMRoute,slightly cloudy,19.23,25.48
+TripB17,FTMRoute,slightly cloudy,19.25,26.02
+TripB18,Munich North,cloudy,15.81,18.49
+TripB19,Munich North,sunrise,16.43,19.85
+TripB20,Munich North,dark,12.34,23.38
+TripB21,Munich North,sunrise,15.84,17.33
+TripB22,Munich North,sunset,16.86,19.99
+TripB23,Munich North,slightly cloudy,18.71,18.55
+TripB24,Munich North,slightly cloudy,9.33,16.3
+TripB25,Munich North,slightly cloudy,13.5,17.03
+TripB26,Munich North,slightly cloudy,14.7,13.42
+TripB27,FTMRoute,sunny,19.23,24.48
+TripB28,FTMRoute,sunny,17.53,22.77
+TripB29,Munich North,cloudy,15.83,16.14
+TripB30,Munich North,sunrise,14.86,15.35
+TripB31,Munich North,dark,15.24,18.28
+TripB32,Munich North,cloudy,14.24,13.26
+TripB33,Munich North,cloudy,7.03,9.13
+TripB34,Munich North,cloudy,9.14,12.23
+TripB35,Munich North,dark,15.42,22.71
+TripB36,Munich North,sunny,38.72,47.54
+TripB37,Munich East,slightly cloudy,17.46,23.62
+TripB38,FTMRoute reverse,sunny,18.9,27.38

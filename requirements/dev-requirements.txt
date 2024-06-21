@@ -1,0 +1,15 @@
+# Testing and dev dependencies
+pytest
+asynctest
+pytest-asyncio
+pytest-benchmark
+pytest-cov
+pytest-integration
+pytest-mock
+pytest-recording
+pytesseract==0.3.10
+aioresponses
+# python code format, usage `black .`
+black
+# for git hooks
+pre-commit

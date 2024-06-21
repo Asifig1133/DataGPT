@@ -1,0 +1,105 @@
+2024-05-30 16:04:32 | WARNING | dbgpt.util._db_migration_utils | Initialize and upgrade database metadata with alembic, just run this in your development environment, if you deploy this in production environment, please run webserver with --disable_alembic_upgrade(`python dbgpt/app/dbgpt_server.py --disable_alembic_upgrade`).
+we suggest you to use `dbgpt db migration` to initialize and upgrade database metadata with alembic, your can run `dbgpt db migration --help` to get more information.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Context impl SQLiteImpl.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Context impl SQLiteImpl.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Will assume non-transactional DDL.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Will assume non-transactional DDL.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Context impl SQLiteImpl.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Context impl SQLiteImpl.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Will assume non-transactional DDL.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Will assume non-transactional DDL.
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Running upgrade 43667eab3be1 -> f7ec3eb2871c, New migration
+2024-05-30 16:04:32 | INFO | alembic.runtime.migration | Running upgrade 43667eab3be1 -> f7ec3eb2871c, New migration
+2024-05-30 16:04:32 | INFO | dbgpt.component | Register component with name dbgpt_thread_pool_default and instance: <dbgpt.util.executor_utils.DefaultExecutorFactory object at 0x16d40a200>
+2024-05-30 16:04:32 | INFO | dbgpt.component | Register component with name dbgpt_model_controller and instance: <dbgpt.model.cluster.controller.controller.ModelControllerAdapter object at 0x144770a30>
+2024-05-30 16:04:32 | INFO | dbgpt.component | Register component with name dbgpt_agent_hub and instance: <dbgpt.agent.controller.ModuleAgent object at 0x16d7172e0>
+2024-05-30 16:04:32 | INFO | dbgpt.app.component_configs | Register local LocalEmbeddingFactory
+2024-05-30 16:04:32 | INFO | dbgpt.app.component_configs | 
+
+=========================== EmbeddingModelParameters ===========================
+
+model_name: text2vec
+model_path: /Users/asif/Downloads/DB-GPT-main/models/text2vec-large-chinese
+device: mps
+normalize_embeddings: None
+
+======================================================================
+
+
+2024-05-30 16:04:35 | INFO | dbgpt.component | Register component with name embedding_factory and instance: <dbgpt.app.component_configs.LocalEmbeddingFactory object at 0x16d4588b0>
+2024-05-30 16:04:35 | INFO | dbgpt.component | Register component with name dbgpt_model_cache_manager and instance: <dbgpt.storage.cache.manager.LocalCacheManager object at 0x333627f10>
+2024-05-30 16:04:35 | INFO | dbgpt.component | Register component with name dbgpt_awel_trigger_manager and instance: <dbgpt.core.awel.trigger.trigger_manager.DefaultTriggerManager object at 0x333626da0>
+2024-05-30 16:04:35 | INFO | dbgpt.component | Register component with name dbgpt_awel_dag_manager and instance: <dbgpt.core.awel.dag.dag_manager.DAGManager object at 0x32d2dcbe0>
+2024-05-30 16:04:35 | INFO | dbgpt.core.awel.trigger.http_trigger | mount router function <function HttpTrigger.mount_to_router.<locals>.create_route_function.<locals>.route_function at 0x32d2cdab0>(AWEL_trigger_route__examples_simple_rag), endpoint: /examples/simple_rag, methods: ['POST']
+2024-05-30 16:04:35 | INFO | dbgpt.core.awel.trigger.http_trigger | mount router function <function HttpTrigger.mount_to_router.<locals>.create_route_function.<locals>.route_function at 0x32d2cdcf0>(AWEL_trigger_route__examples_simple_chat), endpoint: /examples/simple_chat, methods: ['POST']
+2024-05-30 16:04:35 | INFO | dbgpt.core.awel.trigger.http_trigger | mount router function <function HttpTrigger.mount_to_router.<locals>.create_route_function.<locals>.route_function at 0x32d2cdf30>(AWEL_trigger_route__examples_hello), endpoint: /examples/hello, methods: ['GET']
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.manager | Worker params: 
+
+=========================== ModelWorkerParameters ===========================
+
+model_name: chatgpt_proxyllm
+model_path: chatgpt_proxyllm
+worker_type: None
+worker_class: None
+model_type: huggingface
+host: 0.0.0.0
+port: 5000
+daemon: False
+limit_model_concurrency: 5
+standalone: True
+register: True
+worker_register_host: None
+controller_addr: None
+send_heartbeat: True
+heartbeat_interval: 20
+log_level: None
+log_file: dbgpt_model_worker_manager.log
+tracer_file: dbgpt_model_worker_manager_tracer.jsonl
+tracer_storage_cls: None
+
+======================================================================
+
+
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.manager | Run WorkerManager with standalone mode, controller_addr: http://127.0.0.1:5000
+2024-05-30 16:04:35 | INFO | dbgpt.model.model_adapter | Use DB-GPT old adapter
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.default_worker | model_name: chatgpt_proxyllm, model_path: chatgpt_proxyllm, model_param_class: <class 'dbgpt.model.parameter.ProxyModelParameters'>
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.default_worker | [DefaultModelWorker] Parameters of device is None, use mps
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.manager | Init empty instances list for chatgpt_proxyllm@llm
+2024-05-30 16:04:35 | INFO | dbgpt.component | Register component with name dbgpt_worker_manager_factory and instance: <dbgpt.model.cluster.worker.manager._DefaultWorkerManagerFactory object at 0x3478c1510>
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.manager | Begin start all worker, apply_req: None
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.manager | Apply req: None, apply_func: <function LocalWorkerManager._start_all_worker.<locals>._start_worker at 0x347e17640>
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.manager | Apply to all workers
+2024-05-30 16:04:35 | INFO | dbgpt.model.cluster.worker.default_worker | Begin load model, model params: 
+
+=========================== ProxyModelParameters ===========================
+
+model_name: chatgpt_proxyllm
+model_path: chatgpt_proxyllm
+proxy_server_url: https://aztestgpt4.openai.azure.com/openai/deployments/GPT4/chat/completions?api-version=2023-07-01-preview
+proxy_api_key: 7******6
+proxy_api_base: https://aztestgpt4.openai.azure.com/
+proxy_api_app_id: None
+proxy_api_secret: None
+proxy_api_type: azure
+proxy_api_version: 2023-07-01-preview
+http_proxy: None
+proxyllm_backend: GPT4
+model_type: proxy
+device: mps
+prompt_template: None
+max_context_size: 4096
+
+======================================================================
+
+
+2024-05-30 16:04:35 | INFO | dbgpt.model.loader | Load proxyllm
+2024-05-30 16:04:36 | INFO | dbgpt.rag.summary.db_summary_client | Vector store name syntheticEHR_profile exist
+2024-05-30 16:04:36 | INFO | dbgpt.rag.summary.db_summary_client | initialize db summary profile success...
+2024-05-30 16:04:36 | INFO | dbgpt.rag.summary.db_summary_client | db summary embedding success
+2024-05-30 16:06:47 | INFO | dbgpt.app.openapi.api_v1.api_v1 | /controller/model/types
+2024-05-30 16:06:47 | INFO | dbgpt.model.cluster.controller.controller | Get all instances with None, healthy_only: True
+2024-05-30 16:13:35 | INFO | dbgpt.model.cluster.worker.manager | Stop all workers
+2024-05-30 16:13:35 | INFO | dbgpt.model.cluster.worker.manager | Apply req: None, apply_func: <function LocalWorkerManager._stop_all_worker.<locals>._stop_worker at 0x3333f2950>
+2024-05-30 16:13:35 | INFO | dbgpt.model.cluster.worker.manager | Apply to all workers
+2024-05-30 16:13:35 | WARNING | dbgpt.model.cluster.worker.manager | Stop worker, ignored exception from deregister_func: All connection attempts failed
+2024-05-30 16:13:35 | WARNING | dbgpt.model.cluster.worker.manager | Stop worker, ignored exception from deregister_func: All connection attempts failed
