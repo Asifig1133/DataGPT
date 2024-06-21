@@ -34,10 +34,10 @@ This repository provides the source code for DataGPT, a toolkit for generating S
 
   download a specific large language model from Hugging Face. For example, to download the text2vec-large-chinese model:
 
-  cd DataGPT
-  mkdir models
-  cd models
-  git clone https://huggingface.co/GanymedeNil/text2vec-large-chinese
+  - cd DataGPT
+  - mkdir models
+  - cd models
+  - git clone https://huggingface.co/GanymedeNil/text2vec-large-chinese
   
 6. Run the Service:
 
