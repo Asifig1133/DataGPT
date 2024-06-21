@@ -8,7 +8,9 @@ This repository provides the source code for DataGPT, a toolkit for generating S
     
 2. Environment Setup
 
-The default database uses SQLite, so no additional database installation is required in the default mode. However, if you want to use other databases, we recommend creating a Python virtual environment using conda.
+The default database uses SQLite, so no additional database installation is required in the default mode. However, if you want to use other databases, 
+  
+  # recommend creating a Python virtual environment using conda.
 
   i. Install Miniconda (if not already installed):
   Refer to the official Miniconda installation guide for instructions: https://docs.anaconda.com/miniconda/
