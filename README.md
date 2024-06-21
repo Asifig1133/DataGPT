@@ -30,7 +30,7 @@ This repository provides the source code for DataGPT, a toolkit for generating S
   If using GPT-4
   PROXYLLM_BACKEND=gpt-4
 
-5. Download Large Language Model (Optional):
+5. Download the embedding model:
 
   download a specific large language model from Hugging Face. For example, to download the text2vec-large-chinese model:
 
